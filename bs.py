@@ -8,7 +8,6 @@ def prettify(url):
 	prety = soup.prettify
 	return prety
 
-
 def scrapText(url, tag, classIdentity=False, className=False):
 	connect = requests.get(url)
 	data = connect.content

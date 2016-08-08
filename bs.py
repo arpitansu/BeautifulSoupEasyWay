@@ -17,5 +17,6 @@ def scrapText(url, tag, classIdentity=False, className=False):
 	tolist = []
 	for data in get_tags:
 		tolist.append(data.text)
-		print (tolist[:])
+	return (tolist)
+
 

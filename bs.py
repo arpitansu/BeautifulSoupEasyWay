@@ -30,6 +30,12 @@ def href_links(url, tag='a', classIdentity=False, className=False):
 		tolist.append(links)
 	return (tolist)
 
+def get_all_text(url):
+	connect = requests.get(url)
+	data = connect.content
+	soup = BeautifulSoup(data, "html.parser")
+	return soup.get_text()
+
 
 
 
